@@ -5,3 +5,4 @@ import KeyboardShortcuts from './KeyboardShortcuts';
 import MidiNumbers from './MidiNumbers';
 
 export { ControlledPiano, Piano, Keyboard, KeyboardShortcuts, MidiNumbers };
+

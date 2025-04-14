@@ -11,6 +11,7 @@ class Piano extends React.Component {
     activeNotes: PropTypes.arrayOf(PropTypes.number.isRequired),
     playNote: PropTypes.func.isRequired,
     stopNote: PropTypes.func.isRequired,
+    highlightedKeys: PropTypes.array.isRequired,
     onPlayNoteInput: PropTypes.func,
     onStopNoteInput: PropTypes.func,
     renderNoteLabel: PropTypes.func,

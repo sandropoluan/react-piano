@@ -17,6 +17,7 @@ class Key extends React.Component {
     onStopNoteInput: PropTypes.func.isRequired,
     accidentalWidthRatio: PropTypes.number.isRequired,
     pitchPositions: PropTypes.object.isRequired,
+    highlighted: PropTypes.bool.isRequired,
     children: PropTypes.node,
   };
 
@@ -70,6 +71,7 @@ class Key extends React.Component {
       gliss,
       useTouchEvents,
       accidental,
+      highlighted,
       active,
       disabled,
       children,
@@ -80,6 +82,7 @@ class Key extends React.Component {
     return (
       <div
         className={classNames('ReactPiano__Key', {
+          'ReactPiano__Key--highligthed': highlighted && !active,
           'ReactPiano__Key--accidental': accidental,
           'ReactPiano__Key--natural': !accidental,
           'ReactPiano__Key--disabled': disabled,

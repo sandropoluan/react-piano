@@ -1,3 +1,7 @@
+:root{
+  --highlightedBg: #ffb995;
+}
+
 .ReactPiano__Keyboard {
   /* Used for absolute positioning of .ReactPiano__Key--accidental elements */
   position: relative;
@@ -42,6 +46,16 @@
    */
   flex: 1;
   margin-right: 1px;
+}
+
+.ReactPiano__Key--natural.ReactPiano__Key--highligthed {
+  background-color: var(--highlightedBg);
+  border: 1px solid var(--highlightedBg);
+
+}
+
+.ReactPiano__Key--accidental.ReactPiano__Key--highligthed {
+  background-color: var(--highlightedBg);
 }
 
 .ReactPiano__Key--natural:last-child {

@@ -10,6 +10,7 @@ class ControlledPiano extends React.Component {
     activeNotes: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
     playNote: PropTypes.func.isRequired,
     stopNote: PropTypes.func.isRequired,
+    highlightedKeys: PropTypes.array.isRequired,
     onPlayNoteInput: PropTypes.func.isRequired,
     onStopNoteInput: PropTypes.func.isRequired,
     renderNoteLabel: PropTypes.func.isRequired,
@@ -171,6 +172,7 @@ class ControlledPiano extends React.Component {
           noteRange={this.props.noteRange}
           onPlayNoteInput={this.onPlayNoteInput}
           onStopNoteInput={this.onStopNoteInput}
+          highlightedKeys={this.props.highlightedKeys}
           activeNotes={this.props.activeNotes}
           className={this.props.className}
           disabled={this.props.disabled}
