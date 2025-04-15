@@ -50,7 +50,7 @@
 
 .ReactPiano__Key--natural.ReactPiano__Key--highligthed {
   background-color: var(--highlightedBg);
-  border: 1px solid var(--highlightedBg);
+  border: 1px solid #f1e7d1;
 
 }
 
